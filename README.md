@@ -2,8 +2,10 @@
 
 To use this template open a terminal on the same folder and run
 
-npm install 
+  npm install 
 
 After that you will be ready to code.
 
-Run npm test to run the test.
+To run the test run:
+
+  npm test
