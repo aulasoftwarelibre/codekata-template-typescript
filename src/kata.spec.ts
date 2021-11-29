@@ -1,9 +1,5 @@
-import { ejemplo} from './kata';
+import { isTrue } from './kata';
 
-test('ejemplo 1', () => {
-  expect(ejemplo()).toBe(true);
-});
-
-test('ejemplo 2', () => {
-  expect(ejemplo()).toBe(false);
+test('It is true', () => {
+  expect(isTrue()).toBe(true);
 });
