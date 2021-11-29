@@ -1,3 +1,3 @@
-export function ejemplo(): boolean {
+export function isTrue(): boolean {
   return true;
 }
