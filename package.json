@@ -4,7 +4,9 @@
   "author": "Sergio Gómez <sergio@uco.es>",
   "main": "index.js",
   "license": "AGPL-3.0",
+  "type": "module",
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.11.23",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
@@ -19,8 +21,51 @@
   "scripts": {
     "format": "prettier --write '**/*.ts'",
     "format-check": "prettier --check '**/*.ts'",
-    "lint": "eslint . --ext .ts,.tsx",
-    "test": "vitest",
+    "lint": "eslint",
+    "test": "vitest --run",
+    "test:watch": "vitest",
     "all": "npm run format-check && npm run lint && npm test"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module",
+      "project": [
+        "./tsconfig.json"
+      ]
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "root": true,
+    "rules": {
+      "@typescript-eslint/no-shadow": "error",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "ignoreRestSiblings": true
+        }
+      ],
+      "camelcase": "error",
+      "default-case-last": "error",
+      "default-param-last": "error",
+      "dot-notation": "error",
+      "eqeqeq": "error",
+      "no-shadow": "off"
+    }
   }
 }

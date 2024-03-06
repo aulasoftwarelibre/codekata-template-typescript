@@ -1,3 +1,3 @@
 export function isTrue(): boolean {
-  return true;
+  return true
 }
