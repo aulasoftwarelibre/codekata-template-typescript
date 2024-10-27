@@ -1,5 +1,7 @@
+import { expect, it } from 'vitest'
+
 import { isTrue } from '@/kata'
 
-test('It is true', () => {
+it('It is true', () => {
   expect(isTrue()).toBe(true)
 })

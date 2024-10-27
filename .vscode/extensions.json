@@ -1,5 +1,8 @@
 {
-    "recommendations": [
-        "vitest.explorer"
-    ]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "vitest.explorer"
+  ]
 }
