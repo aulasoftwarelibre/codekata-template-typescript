@@ -5,6 +5,7 @@ This is the code kata template for typescript created by [Aula de Software Libre
 You can use this repository as a template or open it directly by clicking here:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/aulasoftwarelibre/codekata-template-typescript)
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/aulasoftwarelibre/codekata-template-typescript)
 
 Codespace install all dependencies automatically, if you prefer to install locally follow these steps:
 
