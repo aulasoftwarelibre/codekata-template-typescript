@@ -15,7 +15,8 @@
     "target": "es2022",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "strictNullChecks": true
   },
   "exclude": ["node_modules", "dist"]
 }
