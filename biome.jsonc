@@ -3,11 +3,23 @@
   "files": {
     "includes": ["**", "!.devcontainer"]
   },
-  "extends": ["ultracite"],
+  "extends": ["ultracite/core"],
   "javascript": {
     "formatter": {
       "semicolons": "asNeeded",
       "quoteStyle": "single"
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.spec.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noMagicNumbers": "info"
+          }
+        }
+      }
+    }
+  ]
 }
