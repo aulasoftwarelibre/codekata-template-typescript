@@ -1,8 +1,7 @@
 {
   "recommendations": [
-    "biomejs.biome",
+    "oxc.oxc-vscode",
     "vitest.explorer",
-    "esbenp.prettier-vscode",
     "usernamehw.errorlens"
   ]
 }

@@ -1,3 +1,10 @@
 import { defineConfig } from 'vitest/config'
 
-export default defineConfig({})
+export default defineConfig({
+  test: {
+    coverage: { provider: 'v8' },
+    include: ['src/**/*.spec.ts'],
+    mockReset: true,
+    reporters: ['verbose'],
+  },
+})

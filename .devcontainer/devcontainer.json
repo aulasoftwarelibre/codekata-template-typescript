@@ -2,64 +2,15 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
   "name": "Node.js & TypeScript",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
-
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  "features": {},
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-
-  // Use 'postCreateCommand' to run commands after the container is created.
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:4-24-trixie",
   "postCreateCommand": "pnpm install",
-
-  // Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": [
-        "usernamehw.errorlens",
+        "oxc.oxc-vscode",
         "vitest.explorer",
-        "biomejs.biome",
-        "esbenp.prettier-vscode"
-      ],
-      "settings": {
-        "[javascript]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[typescript]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[javascriptreact]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[typescriptreact]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[json]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[jsonc]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[css]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[graphql]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "typescript.tsdk": "node_modules/typescript/lib",
-        "editor.formatOnSave": true,
-        "editor.formatOnPaste": true,
-        "emmet.showExpandedAbbreviation": "never",
-        "editor.codeActionsOnSave": {
-          "source.fixAll.biome": "explicit",
-          "source.organizeImports.biome": "explicit"
-        }
-      }
+        "usernamehw.errorlens"
+      ]
     }
   }
-
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
 }
