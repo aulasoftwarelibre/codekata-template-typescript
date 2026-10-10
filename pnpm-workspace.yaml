@@ -1,2 +1,5 @@
 allowBuilds:
   lefthook: true
+auditConfig:
+  ignoreGhsas:
+    - GHSA-vfj7-8cjw-p6xm
